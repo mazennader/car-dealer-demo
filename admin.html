@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel - AutoDealer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="logo-box">A</div>
+  <h1>AutoDealer Admin</h1>
+</header>
+
+<main class="admin-page">
+  <div class="admin-top">
+    <div>
+      <h2>Car Inventory</h2>
+      <p>Add, edit, or remove cars from the website.</p>
+    </div>
+    <a href="index.html" class="back-btn-admin">View Website</a>
+  </div>
+
+  <form id="carForm" class="admin-form">
+    <input type="hidden" id="carId">
+
+    <input id="title" placeholder="Car name" required>
+    <input id="brand" placeholder="Brand" required>
+    <input id="year" placeholder="Year" required>
+    <input id="price" placeholder="Price" required>
+    <input id="mileage" placeholder="Mileage" required>
+    <input id="transmission" placeholder="Transmission" required>
+    <input id="fuel" placeholder="Fuel type" required>
+    <input id="image" placeholder="Main image URL" required>
+    <textarea id="description" placeholder="Description" required></textarea>
+
+    <button type="submit" id="submitBtn">Add Car</button>
+  </form>
+
+  <div id="adminCarsList" class="admin-cars-list"></div>
+</main>
+
+<script src="admin.js"></script>
+</body>
+</html>
