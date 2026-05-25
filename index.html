@@ -3,53 +3,205 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>AutoDealer</title>
+
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- ICONS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">A</div>
+      <p>AutoDealer</p>
+    </div>
+  </div>
+
+  <!-- HEADER -->
   <header class="header">
-    <div class="logo-box">A</div>
-    <h1>AutoDealer</h1>
+    <div class="header-left">
+      <div class="logo-box">A</div>
+      <h1>AutoDealer</h1>
+    </div>
+
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#cars">Cars</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section class="hero">
+  <!-- HERO -->
+  <section class="hero" id="home">
+
     <div class="hero-overlay">
-      <h2>Premium Cars</h2>
-      <p>Find your perfect luxury vehicle</p>
+
+      <span class="hero-tag">
+        PREMIUM DEALERSHIP
+      </span>
+
+      <h2>
+        Premium Cars <br />
+        For Premium Drivers
+      </h2>
+
+      <p>
+        Discover luxury vehicles with elegant design,
+        high performance, and premium comfort.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#cars" class="hero-btn dark-btn">
+          Explore Cars
+        </a>
+
+        <a
+          href="https://wa.me/96170123456"
+          target="_blank"
+          class="hero-btn light-btn"
+        >
+          WhatsApp
+        </a>
+      </div>
+
     </div>
+
   </section>
 
-  <main class="container">
-    <div class="filters">
-      <input type="text" id="searchInput" placeholder="Search cars..." />
+  <!-- MAIN -->
+  <main class="container" id="cars">
+
+    <!-- FILTERS -->
+    <div class="filters fade-up">
+
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search cars..."
+      />
+
       <select id="brandFilter">
         <option value="all">All Brands</option>
       </select>
+
     </div>
 
-    <p id="carCount" class="car-count"></p>
+    <p id="carCount" class="car-count fade-up"></p>
 
+    <!-- CARS -->
     <div id="carsGrid" class="cars-grid"></div>
+
   </main>
 
+  <!-- CONTACT SECTION -->
+  <section class="contact-section fade-up" id="contact">
+
+    <div class="contact-left">
+
+      <span class="contact-small">
+        CONTACT US
+      </span>
+
+      <h2>
+        Let’s Find Your <br />
+        Dream Car
+      </h2>
+
+      <p>
+        Speak with our team today and discover luxury
+        vehicles tailored to your lifestyle.
+      </p>
+
+      <div class="contact-items">
+
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>+961 70 123 456</span>
+        </div>
+
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>contact@autodealer.com</span>
+        </div>
+
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Beirut, Lebanon</span>
+        </div>
+
+      </div>
+
+      <a
+        href="https://wa.me/96170123456"
+        target="_blank"
+        class="contact-whatsapp"
+      >
+        Chat on WhatsApp
+      </a>
+
+    </div>
+
+    <div class="contact-right">
+
+      <iframe
+        src="https://www.google.com/maps?q=beirut%20lebanon&output=embed"
+        loading="lazy"
+        allowfullscreen
+      ></iframe>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
   <footer class="footer">
+
     <div class="footer-top">
-      <div class="phone">☎ (310) 555-0123</div>
-      <a class="whatsapp" href="https://wa.me/96170123456" target="_blank">WhatsApp</a>
+
+      <div class="footer-brand">
+        <div class="logo-box">A</div>
+        <h3>AutoDealer</h3>
+      </div>
 
       <div class="socials">
-        <a href="#">f</a>
-        <a href="#">◎</a>
-        <a href="#">𝕏</a>
+
+        <a href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="#">
+          <i class="fab fa-tiktok"></i>
+        </a>
+
       </div>
+
     </div>
 
     <div class="footer-bottom">
-      © 2024 AutoDealer. All rights reserved.
+      © 2026 AutoDealer. All rights reserved.
     </div>
+
   </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>
